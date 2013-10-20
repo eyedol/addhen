@@ -4,6 +4,8 @@
  * Variables can be assigned with the view object and referenced locally within
  * the view.
  *
+ * CREDIT     Kohana View class. Modified a bit to fit my needs
+ *
  * @package    View
  * @author     Henry Addo
  * @copyright  (c) 2013 Henry Addo
@@ -228,15 +230,7 @@ class View {
 		}
 		catch (Exception $e)
 		{
-			/**
-			 * Display the exception message.
-			 *
-			 * We use this method here because it's impossible to throw and
-			 * exception from __toString().
-			 */
-			$error_response = Exception::_handler($e);
-
-			return $error_response->body();
+			return $e->getMessage();
 		}
 	}
 
