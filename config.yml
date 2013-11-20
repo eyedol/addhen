@@ -1,0 +1,4 @@
+"theme-addhen" :
+  use : "theme"
+
+"date_format": "%b %d, %Y"

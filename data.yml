@@ -1,0 +1,16 @@
+title : addhen
+tagline : Software Developer
+description : Personal Website of Henry Addo aka eyedol
+author :
+  name : Henry Addo
+
+navigation :
+  - index.html
+  - releases.html
+  - download.html
+  - contributors.html
+  - configure.html
+  - developers.html
+  - features.md
+  - features.html
+  - screenshot.html
