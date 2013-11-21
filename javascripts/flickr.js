@@ -24,14 +24,14 @@ $(function () {
             format: 'json',
             method: 'flickr.people.getPublicPhotos',
             user_id: '73308752@N00',
-            per_page: 35,
+            per_page: 42,
             api_key: '7ffd3c4b9d9f3a486b67124d5b530f11'
         },
         dataType: 'jsonp',
         jsonp: 'jsoncallback'
     }).done(function (result) {
-        $('#pics').append('<ul id="list"></ul>');
-        var baseUrl;
+        var el = $('#imgs '),
+            baseUrl;
         // Add the demo images as links with thumbnails to the page:
         $.each(result.photos.photo, function (index, photo) {
             baseUrl = 'http://farm' + photo.farm + '.static.flickr.com/' +
@@ -41,7 +41,16 @@ $(function () {
             ).prop('href', baseUrl + '_b.jpg')
              .prop('title', photo.title)
              .attr('data-gallery', '')
-             .appendTo($('<li></li>').appendTo('#list'));
+             .appendTo(el);
         });
+        $("#imgs").mCustomScrollbar("update");
+    });
+
+    $("#imgs").mCustomScrollbar({
+        horizontalScroll:true,
+        scrollButtons:{
+            enable:true
+        },
+        theme:"light-2"
     });
 });

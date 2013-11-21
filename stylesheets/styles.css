@@ -34,7 +34,8 @@ a img {
     border:none;
 }
 
-#top_pics {
+/** Gallery */
+.inner-gallery {
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     -ms-border-radius:5px;
@@ -45,34 +46,96 @@ a img {
     box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.4);
     background:black;
     margin-bottom:20px;
+    padding-bottom: 1px;
 }
 
-#top_pics #pics {
-    padding:10px 0 0 10px;
-    margin:0;
-    overflow:hidden;
+.img-gallery .element {
+    margin-bottom: 10px;
 }
-
-#top_pics #pics ul {
-    list-style:none;
-    padding:0;
-    margin:0;
-}
-
-#top_pics #pics ul li {
-    display:inline;
-    width:150px;
-    height:150px;
-}
-
-#top_pics #pics ul li img {
-    border:none;
-    padding:0 10px 10px 0;
+.img-gallery .element img{
+    width: 150px !important;
+    max-width: 150px !important;
+    margin: 11px 0 0 11px;
     filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity:1;
 }
 
-#top_pics #pics ul li img:hover {
+.img-gallery .element img:hover{
     filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
     opacity:.7;
+}
+
+/** Social Media */
+.social{
+    margin-bottom: 15px;
+    text-align: right;
+}
+.social a i{
+   display:inline-block;
+   width:30px;
+   height:30px;
+   margin-left: 5px;
+   font-size:15px !important;
+   line-height:30px;
+   text-decoration:none;
+   text-align:center;
+   color:#fff;
+   border-radius: 3px !important;
+   -webkit-transition: background 2s ease;
+   -moz-transition: background 2s ease;
+   -o-transition: background 2s ease;
+   -ms-transition: background 2s ease;
+   transition: background 2s ease;
+}
+.social a.rss i{
+    background:#f58229;
+}
+
+.social a.twitter i{
+    background:#1ba1e2;
+}
+
+.social a.google-plus i{
+    background:#f22d0c;
+}
+
+.social a.linkedin i{
+    background:#2d93cf;
+}
+
+.social a.stackoverflow i{
+    background: #c09553;
+}
+
+.social a.github i{
+    background: #334248;
+}
+
+.social a.careers i{
+    background: #fe7a15;
+}
+
+.social a.flickr i{
+    background: #ff0084;
+}
+
+.social a:hover i{
+   background:#000;
+   -webkit-transition: background 2s ease;
+   -moz-transition: background 2s ease;
+   -o-transition: background 2s ease;
+   -ms-transition: background 2s ease;
+   transition: background 2s ease;
+}
+
+.social a, .social a:hover{
+   border:0px;
+   text-decoration:none;
+}
+
+
+
+.container .footer {
+    border-top: 1px solid #333333;
+    padding-top: 20px;
 }
