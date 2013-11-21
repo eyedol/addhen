@@ -87,6 +87,27 @@ a img {
    -ms-transition: background 2s ease;
    transition: background 2s ease;
 }
+
+.menu-social{
+    text-align: right;
+}
+.menu-social a i{
+    display:inline-block;
+    width:22px;
+    height:22px;
+    margin-left: 5px;
+    font-size:15px !important;
+    line-height:22px;
+    text-decoration:none;
+    text-align:center;
+    color:#fff;
+    border-radius: 50px !important;
+    -webkit-transition: background 2s ease;
+    -moz-transition: background 2s ease;
+    -o-transition: background 2s ease;
+    -ms-transition: background 2s ease;
+    transition: background 2s ease;
+}
 .social a.rss i{
     background:#f58229;
 }
@@ -119,6 +140,23 @@ a img {
     background: #ff0084;
 }
 
+.menu-social a.flickr i{
+    background: #ff0084;
+
+}
+
+.menu-social a.stackoverflow i{
+    background: #c09553;
+}
+
+.menu-social a.twitter i{
+    background:#1ba1e2;
+}
+
+.menu-social a.github i{
+    background: #334248;
+}
+
 .social a:hover i{
    background:#000;
    -webkit-transition: background 2s ease;
@@ -128,7 +166,21 @@ a img {
    transition: background 2s ease;
 }
 
-.social a, .social a:hover{
+.menu-social a:hover i{
+   background:#000;
+   -webkit-transition: background 2s ease;
+   -moz-transition: background 2s ease;
+   -o-transition: background 2s ease;
+   -ms-transition: background 2s ease;
+   transition: background 2s ease;
+}
+
+.social a, a:hover{
+   border:0px;
+   text-decoration:none;
+}
+
+.menu-social a, a:hover{
    border:0px;
    text-decoration:none;
 }
