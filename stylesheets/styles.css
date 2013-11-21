@@ -133,9 +133,191 @@ a img {
    text-decoration:none;
 }
 
-
-
 .container .footer {
     border-top: 1px solid #333333;
     padding-top: 20px;
+}
+
+#filters{
+   margin-left:0px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+#filters li{
+    display:inline;
+    padding:0px;
+    background:none;
+}
+
+#filters a{
+    font-size:13px;
+    padding: 4px 10px;
+    display: inline-block;
+}
+
+.img-project .element{
+    margin: 12px;
+}
+
+/* Portfolio */
+
+.img-project ul{
+   margin:0;
+   padding:0;
+}
+
+.img-project .element img{
+    width: 230px !important;
+    max-width: 230px !important;
+}
+
+#project{
+   text-align:center;
+}
+
+#project .element{
+   padding: 0px;
+}
+
+#project h4{
+   margin:4px 0px;
+   padding:0px;
+   margin-top: 10px;
+  font-size: 15px;
+}
+
+#project a, #project a:visited, #project a:hover{
+   color:#666;
+   text-decoration:none;
+}
+
+#project .pcap{
+  color: #fff;
+   padding:3px 0px;
+   border-top: 0;
+}
+
+#project .pcap p{
+  padding: 0px 10px 10px 10px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#project .pcap{
+   max-width:230px;
+}
+
+#project .pcap{
+   line-height:20px;
+}
+
+#project img{
+   height:150px;
+}
+
+/** Projects background color*/
+
+.br-photography{
+    background: #ff0084 !important;
+}
+
+.br-ushahidi-android{
+    background: #891f02 !important;
+}
+
+.br-findreels{
+    background: #428bcf !important;
+}
+
+.br-crowdmap {
+    background: #f0bc59;
+}
+.br-smssync{
+  background: #79b255 !important;
+}
+
+.br-kasahorow{
+  background: #948f7a !important;
+}
+
+.br-ushahidi{
+  background: #74625e;
+}
+
+.br-addhen{
+  background: #333;
+}
+
+.br-white{
+  background: #fff;
+}
+
+.skills{
+  margin-bottom: 10px;
+}
+
+.skill{
+    background:#334248;;
+    color:#fff;
+    border-radius:5px;
+    font-size:13px;
+    line-height:18px;
+    text-shadow:none;
+    padding:3px 5px;
+    border:1px solid #333237;
+    cursor:pointer;
+}
+
+.skill:hover{
+    background: black;
+}
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+   z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+   pointer-events: none;
+   z-index: 1;
+}
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property:    -moz-transform, opacity;
+    -ms-transition-property:     -ms-transform, opacity;
+    -o-transition-property:      -o-transform, opacity;
+    transition-property:         transform, opacity;
 }

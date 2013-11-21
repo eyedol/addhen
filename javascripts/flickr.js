@@ -53,4 +53,23 @@ $(function () {
         },
         theme:"light-2"
     });
+
+    /* Isotype */
+
+    // cache container
+    var $container = $('#project');
+    // initialize isotope
+    $container.isotope({
+         // options...
+    });
+
+    // filter items when filter link is clicked
+    $('#filters a').click(function(){
+        var selector = $(this).attr('data-filter');
+        $container.isotope({ filter: selector });
+        return false;
+    });
+
+    // full year
+    $("#year").text( (new Date).getFullYear() );
 });

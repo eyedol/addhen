@@ -1,53 +1,94 @@
 ---
 title : Home
-layout : gallery
-description : Hiking on the web for technology
-date : Oct 30, 2013
-header : <h1>About</h1>
+layout : default
+blurb : This <strong>highlights</strong> some of my <strong>personal active</strong> projects and the ones I'm currently actively participating in.
+keywords : smssync, android, ushahidi, projects, kasahorow, sms, crowdmap, sdk, mapping, android, ushahidi, hdr, flickr
+date : Nov 21, 2013
 ---
-<div class="container">
-    <h1>Photos From Places I Have Visited</h1>
-    <blockquote>
-        <p>These are personal photos I have taken both with my phone and a digital camera from across the globe. I have them hosted on <a href="http://www.flickr.com/photos/eyedol/">Flickr</a> I put them here as well to make it easier to share.
-        These are the recent 105 images I have uploaded to flickr.</p>
-    </blockquote>
-    <!-- The container for the list of example images -->
-    <div class="inner-gallery">
-        <div class="img-gallery">
-        <div id="imgs" class="element"></div>
+<div class="inner-portfolio">
+    <div class="img-project">
+        <div class="container">
+            <ul id="filters">
+                <li><a href="#" data-filter="*" class="btn btn-default">All Project</a></li>
+                <li><a href="#" data-filter=".android" class="btn btn-default">Android Dev</a></li>
+                <li><a href="#" data-filter=".web" class="btn btn-default">Web Dev</a></li>
+                <li><a href="#" data-filter=".photography" class="btn btn-default">Photography</a></li>
+            </ul>
         </div>
-    </div>
-</div>
-<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-<div id="blueimp-gallery" class="blueimp-gallery">
-    <!-- The container for the modal slides -->
-    <div class="slides"></div>
-    <!-- Controls for the borderless lightbox -->
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->
-    <div class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"></h4>
-                </div>
-                <div class="modal-body next"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default pull-left prev">
-                        <i class="glyphicon glyphicon-chevron-left"></i>
-                        Previous
-                    </button>
-                    <button type="button" class="btn btn-primary next">
-                        Next
-                        <i class="glyphicon glyphicon-chevron-right"></i>
-                    </button>
-                </div>
+        <div id="project">
+            <div class="element android">
+                <a href="https://play.google.com/store/apps/details?id=com.ushahidi.android.app">
+                                        <!-- Caption Image -->
+                    <img src="{{urls.media}}/projects/ushahidi-android.png" alt=""/>
+                                        <!-- Portfolio caption -->
+                    <div class="pcap br-ushahidi-android">
+                        <h4>Ushahidi Android App</h4>
+                        <p>An open source Android app for the Ushahidi platform.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="element android">
+                <a href="http://smssync.ushahidi.com">
+                    <img src="{{urls.media}}/projects/smssync.png" alt=""/>
+                    <div class="pcap br-smssync">
+                        <h4>SMSSync</h4>
+                        <p>An open source Android powered SMS gateway.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="element android">
+                <a href="https://github.com/eyedol/kasahorow-Keyboard-For-Android">
+                    <img src="{{urls.media}}/projects/kasahorow-keyboard.png" alt=""/>
+                    <div class="pcap br-kasahorow">
+                        <h4>Kasahorow Android Keyboard</h4>
+                        <p>Keyboard for the Android device for the Ghanaian local languages.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="element android">
+                <a href="http://ushahidi.github.io/Crowdmap-Java/">
+                    <img src="{{urls.media}}/projects/crowdmap.png" alt=""/>
+                    <div class="pcap br-crowdmap">
+                        <h4>Crowdmap Java / Android SDK</h4>
+                        <p>An SDK for accessing the Crowdmap API.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="element web">
+                <a href="img/portfolio/4.jpg">
+                    <img src="{{urls.media}}/projects/findreels.png" alt=""/>
+                    <div class="pcap br-findreels">
+                        <h4>FindReels</h4>
+                        <p>A Cinema/Movie guide for Ghanaians.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="element web">
+                <a href="http://findreels.com">
+                    <img src="{{urls.media}}/projects/ushahidi-platform.png" alt=""/>
+                    <div class="pcap br-ushahidi">
+                        <h4>Ushahidi Platform</h4>
+                        <p>An Open source web tool for crowdsourcing and interactive mapping.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="element web">
+                <a href="{{urls.base_path}}">
+                    <img src="{{urls.media}}/projects/addhen.png" alt=""/>
+                    <div class="pcap br-addhen">
+                        <h4>Addhen.org</h4>
+                        <p>My personal hand coded website.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="element photography">
+                <a href="www.flickr.com/photos/eyedol">
+                    <img src="{{urls.media}}/projects/hdr.jpg" alt=""/>
+                    <div class="pcap br-photography">
+                        <h4>HDR Photograhy</h4>
+                        <p>My Personal attempt at HDR photograhpy.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
