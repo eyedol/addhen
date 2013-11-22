@@ -140,6 +140,10 @@ a img {
     background: #ff0084;
 }
 
+.social a.crowdmap i{
+    background: #f0bc59;
+}
+
 .menu-social a.flickr i{
     background: #ff0084;
 
@@ -155,6 +159,10 @@ a img {
 
 .menu-social a.github i{
     background: #334248;
+}
+
+.menu-social a.crowdmap i{
+    background: #f0bc59;
 }
 
 .social a:hover i{
