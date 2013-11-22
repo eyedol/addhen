@@ -24,34 +24,29 @@ $(function () {
             format: 'json',
             method: 'flickr.people.getPublicPhotos',
             user_id: '73308752@N00',
-            per_page: 42,
+            per_page: 18,
             api_key: '7ffd3c4b9d9f3a486b67124d5b530f11'
         },
         dataType: 'jsonp',
         jsonp: 'jsoncallback'
     }).done(function (result) {
         var el = $('#imgs '),
-            baseUrl;
+        thumb = $('.items--small'),
+        big_img = $('.items--big'),
+        baseUrl;
         // Add the demo images as links with thumbnails to the page:
         $.each(result.photos.photo, function (index, photo) {
             baseUrl = 'http://farm' + photo.farm + '.static.flickr.com/' +
                 photo.server + '/' + photo.id + '_' + photo.secret;
-            $('<a/>').append(
-                    $('<img>').prop('src', baseUrl + '_q.jpg')
-            ).prop('href', baseUrl + '_b.jpg')
+            // build thumbnail
+            $('<li/>').append($('<a/>').append($('<img>').prop('src', baseUrl + '_q.jpg')).prop('href','#')).addClass('item').appendTo(thumb);
+            $('<li/>').append($('<a/>').append($('<figure>').append($('<img>').prop('src', baseUrl + '_z.jpg')).append($('<figcaption>').text(photo.title).addClass('img-caption')) ).prop('href','#').prop('title', photo.title)).addClass('item--big').appendTo(big_img);
+
+           /* $('<a/>').append($('<img>').prop('src', baseUrl + '_q.jpg')).prop('href', baseUrl + '_b.jpg')
              .prop('title', photo.title)
              .attr('data-gallery', '')
-             .appendTo(el);
+             .appendTo(el);*/
         });
-        $("#imgs").mCustomScrollbar("update");
-    });
-
-    $("#imgs").mCustomScrollbar({
-        horizontalScroll:true,
-        scrollButtons:{
-            enable:true
-        },
-        theme:"light-2"
     });
 
     /* Isotype */
@@ -68,6 +63,23 @@ $(function () {
         var selector = $(this).attr('data-filter');
         $container.isotope({ filter: selector });
         return false;
+    });
+
+    $('#gallery-container').sGallery({
+        fullScreenEnabled: true
+      });
+
+    $('.mygallery').tn3({
+        skinDir:"skins",
+        width: 1024,
+        height: 815,
+        external: [{
+        origin: "picasa",
+        source: "featured",
+        params: {
+            "max-results": 30
+        }
+        }]
     });
 
     // full year
