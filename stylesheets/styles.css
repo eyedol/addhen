@@ -88,6 +88,17 @@ a img {
    transition: background 2s ease;
 }
 
+img.media-object {
+    width:80px;
+    height:80px;
+    border-radius: 50px !important;
+    -webkit-transition: background 2s ease;
+    -moz-transition: background 2s ease;
+    -o-transition: background 2s ease;
+    -ms-transition: background 2s ease;
+    transition: background 2s ease;
+}
+
 .menu-social{
     text-align: right;
 }
