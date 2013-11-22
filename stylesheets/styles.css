@@ -99,6 +99,10 @@ img.media-object {
     transition: background 2s ease;
 }
 
+.highlight {
+    color : #ff0084;
+    font-style: bold;
+}
 .menu-social{
     text-align: right;
 }
