@@ -22,8 +22,9 @@ $(function () {
                 '.flickr.com/services/rest/',
         data: {
             format: 'json',
-            method: 'flickr.people.getPublicPhotos',
+            method: 'flickr.photosets.getPhotos',
             user_id: '73308752@N00',
+            photoset_id: '72157637475399933',
             per_page: 18,
             api_key: '7ffd3c4b9d9f3a486b67124d5b530f11'
         },
@@ -35,7 +36,7 @@ $(function () {
         big_img = $('.items--big'),
         baseUrl;
         // Add the demo images as links with thumbnails to the page:
-        $.each(result.photos.photo, function (index, photo) {
+        $.each(result.photoset.photo, function (index, photo) {
             baseUrl = 'http://farm' + photo.farm + '.static.flickr.com/' +
                 photo.server + '/' + photo.id + '_' + photo.secret;
             // build thumbnail
@@ -68,19 +69,6 @@ $(function () {
     $('#gallery-container').sGallery({
         fullScreenEnabled: true
       });
-
-    $('.mygallery').tn3({
-        skinDir:"skins",
-        width: 1024,
-        height: 815,
-        external: [{
-        origin: "picasa",
-        source: "featured",
-        params: {
-            "max-results": 30
-        }
-        }]
-    });
 
     // full year
     $("#year").text( (new Date).getFullYear() );
