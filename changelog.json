@@ -1,0 +1,18 @@
+[
+    {
+        "version": "v1.0",
+        "date": "November 25, 2013",
+        "features": [
+            "Added a projects page",
+            "Added about me page",
+            "Added a photo gallery that pulls a specific set from flickr",
+            "Added social links",
+            "Added a page for crowdmap"
+        ],
+        "bugs": [
+            "Fixed all typo and grammaticall errors"
+            "Upgraded to twitterbootstrap v3.0",
+            "Dropped PHP implementation of the site. The site now entirely run on HTML CSS and Javascript"
+        ]
+     }
+]
