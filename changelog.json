@@ -1,5 +1,14 @@
 [
     {
+        "version": "v1.0.1",
+        "date": "December 1, 2013",
+        "features": [
+        ],
+        "bugs": [
+            "Change site title and description wording"
+        ]
+     },
+    {
         "version": "v1.0",
         "date": "November 25, 2013",
         "features": [
