@@ -1,5 +1,15 @@
 [
     {
+        "version": "v1.0.2",
+        "date": "December 11, 2013",
+        "features": [
+        ],
+        "bugs": [
+            "Fix broken link",
+            "Fix typos"
+        ]
+     },
+    {
         "version": "v1.0.1",
         "date": "December 1, 2013",
         "features": [
