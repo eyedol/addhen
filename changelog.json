@@ -1,5 +1,14 @@
 [
     {
+        "version": "v1.0.3",
+        "date": "January 23, 2014",
+        "features": [
+        ],
+        "bugs": [
+            "Fix broken links on portfolio section"
+        ]
+     },
+    {
         "version": "v1.0.2",
         "date": "December 11, 2013",
         "features": [
