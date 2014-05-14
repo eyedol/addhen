@@ -11,3 +11,5 @@ widgets :
     use : google
     # -- tracking code for google analytics --
     tracking_id : 'UA-1300221-1'
+    domain_name : 'addhen.org'
+    enable_demographics : true
