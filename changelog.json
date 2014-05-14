@@ -1,5 +1,15 @@
 [
     {
+        "version": "v1.0.4",
+        "date": "May 14, 2014",
+        "features": [
+        ],
+        "bugs": [
+            "Switch to using addhen.org's tracking code",
+            "Add new tracking code for Google analytics"
+        ]
+     },
+    {
         "version": "v1.0.3",
         "date": "January 23, 2014",
         "features": [
